@@ -1,5 +1,8 @@
-export const getRandomNumber = (maxNumber: number) =>
-  Math.floor(Math.random() * maxNumber);
+export const getRandomNumber = (maxNumber: number) => {
+  const array = new Uint32Array(1);
+  window.crypto.getRandomValues(array);
+  return array[0] % maxNumber;
+};
 
 export const formatMinuteToReadable = (minutes: number) => {
   const h = Math.floor(minutes / 60);
