@@ -1,7 +1,6 @@
 # 🎬 Netflix Clone - DevSecOps Project
 [![LinkedIn](https://img.shields.io/badge/Connect%20with%20me%20on-LinkedIn-blue.svg)](https://www.linkedin.com/in/aditya-yadav-14078425a/)
-[![GitHub](https://img.shields.io/github/stars/AmanPathak-DevOps.svg?style=social)](https://github.com/Adityayadav7838)
-[![AWS](https://img.shields.io/badge/AWS-%F0%9F%9B%A1-orange)](https://aws.amazon.com)
+[![GitHub](https://img.shields.io/github/stars/adityayadav7838.svg?style=social)](https://github.com/Adityayadav7838)
 
 ![Architecture Diagram](assets/arch-diag.gif)
 
@@ -107,7 +106,6 @@ K8s-Master,Kubernetes Control Plane,t3.medium (2 vCPUs minimum),"6443 (API Serve
 K8s-Worker,Pod Application Executions,t2.medium,30000-32767 (NodePort App Services)
 
 Instance Name       |    Purpose         | Minimum Instance Type           |    Critical Open Inbound Ports
--------------------------------------------------------------------------------------------------------------------
 Jenkins-Server	    |Core Orchestrator,  | t2.large (4GB+ RAM recommended) |    8080 (Jenkins Engine)
                     |Builds, Scans       |                                 |
 SonarQube-Server	|Static Application  | t2.medium (Minimum 2GB+ RAM)	   |    9000 (Sonar Portal)
