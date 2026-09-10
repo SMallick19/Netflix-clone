@@ -42,3 +42,7 @@ jobs:
         run: |
           kubectl apply -f Kubernetes/deployment.yaml
           kubectl apply -f Kubernetes/service.yaml
+          sleep 15
+          kubectl get svc netflix-clone-svc
+          kubectl get pods
+          
