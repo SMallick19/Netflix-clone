@@ -31,7 +31,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::763103708432:role/github-oidc-role
+          aws-access-key-id: ${{ secrets.ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.SECRET_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
       
       - name: Update Kubeconfig
