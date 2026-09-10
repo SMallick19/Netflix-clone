@@ -19,6 +19,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
       
       - name: Build and push Docker image
+        working-directory: ./Application-Code
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/netflix-clone:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/netflix-clone:latest
